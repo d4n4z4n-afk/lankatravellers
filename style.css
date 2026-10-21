@@ -1,0 +1,442 @@
+/*
+Theme Name: Tourism Guide
+Template: adventure-travelling
+Text Domain: tourism-guide
+Author: ThemesPride
+Author URI: https://www.themespride.com/
+Theme URI: https://www.themespride.com/products/free-tourism-wordpress-theme
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: A tourism guide theme is designed to deliver comprehensive information and resources for travelers planning a voyage to a specific destination or region, offering a visually engaging layout enhanced with high-quality images and videos that showcase attractions such as Cruise Vacations, Luxury Travel, Adventure Tours, Exotic Destinations, Travel Packages, World Heritage Sites, Adventure Expeditions, Guided Tours, Cultural Experiences, Scenic Journeys, Travel Escapes, Island Getaways, Holiday Packages, Safari Tours, Vacation Rentals, Eco-friendly Travel, Remote Travel Spots, Beach Resorts, Travel Adventures, Heritage Travel, Travel Consultancy Services, Travel Photography, Travel Blogging, Travel Vlogging, Travel Gear Reviews, Road Trips, Travel Insurance, and Travel Consultancy landmarks, enabling users to explore diverse destinations with ease; it also supports interactive maps highlighting key points of interest along with detailed insights into transportation, lodging, and local dining options, while featuring rich content on local culture, history, customs, and expert travel tips that inspire deeper exploration, complemented by interactive elements like comment sections, social sharing options, and email subscription forms that encourage engagement and keep users updated, ultimately creating an immersive and informative platform that helps travelers plan memorable journeys and confidently explore the world.
+Tags: wide-blocks, block-styles, one-column, two-columns, right-sidebar, left-sidebar, three-columns, four-columns, grid-layout, custom-colors, custom-header, custom-background, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, featured-image-header, full-width-template, translation-ready, rtl-language-support, sticky-post, theme-options, post-formats, threaded-comments, flexible-header, blog, portfolio, photography
+Version: 6.1.4
+Tested up to: 7.1
+Requires PHP: 5.6
+Requires at least: 5.0
+*/
+:root {
+    --color-primary1:#83bd75;
+    --font-awesome:'FontAwesome';
+}
+p {
+  font-size: 16px;
+}
+#main-content p a {
+  text-decoration: underline;
+}
+h1,h2,h3,h4,h5,h6, .logo p.site-title{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  color: #122947;
+}
+body,.logo h1, .logo p.site-title{
+  font-family: 'Nunito', sans-serif;
+}
+.box-info i,#theme-sidebar h3, #theme-sidebar h1.wp-block-heading, #theme-sidebar h2.wp-block-heading, #theme-sidebar h3.wp-block-heading,#theme-sidebar h4.wp-block-heading, #theme-sidebar h5.wp-block-heading, #theme-sidebar h6.wp-block-heading {
+  color: var(--color-primary1);
+}
+.logo p a:hover, #slider .inner_carousel h1 a:hover, .offer-box h2 a:hover, .logo p.site-title a:hover, .logo h1 a:hover, a.added_to_cart.wc-forward,a,.box-content a, #theme-sidebar .textwidget a, #footer .textwidget a, .comment-body a, .entry-content a, .entry-summary a, #theme-sidebar h3,#theme-sidebar a:hover{
+  color: var(--color-primary1);
+}
+.headerbox{
+  background-color: #fff;
+}
+.main-navigation a:hover, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a{
+  color: #000;
+}
+.wc-block-cart__submit-container a,.woocommerce ul.products li.product .onsale, .woocommerce span.onsale,.wc-block-checkout__actions_row .wc-block-components-checkout-place-order-button,.search-box i,.prev.page-numbers, .next.page-numbers,.page-numbers,#theme-sidebar button[type="submit"], #footer button[type="submit"],span.meta-nav,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#comments input[type="submit"],button[type="submit"],.error-404 [type="submit"],.headerbox,.main-navigation ul ul,.more-btn a,#slider .carousel-control-prev-icon, #slider .carousel-control-next-icon,.blog-info,#slider-post .owl-nav i:hover,.site-info{
+  background-color: var(--color-primary1);
+}
+.search_inner form.search-form,#static-blog h3,.readmore-btn a{
+  border-color: var(--color-primary1);
+}
+.wp-block-tag-cloud a:hover{
+  border-color: var(--color-primary1);
+}
+#theme-sidebar .widget_tag_cloud a:hover{
+  color: var(--color-primary1);
+  border-color: var(--color-primary1);
+}
+#theme-sidebar .wp-block-search .wp-block-search__label:before,#theme-sidebar h3:before, #theme-sidebar h1.wp-block-heading:before, #theme-sidebar h2.wp-block-heading:before, #theme-sidebar h3.wp-block-heading:before,#theme-sidebar h4.wp-block-heading:before, #theme-sidebar h5.wp-block-heading:before, #theme-sidebar h6.wp-block-heading:before {
+  background-color: var(--color-primary1);
+}
+.page-box,#theme-sidebar section{
+  border-left-color: var(--color-primary1);
+  border-bottom-color: var(--color-primary1);
+}
+/*block widget for sidebar*/
+#secondary .wp-calendar-table th, #footer .wp-calendar-table th{
+  background-color: var(--color-primary1);
+  color: #fff;
+  border-color: var(--color-primary1);
+}
+.inner_searchbox button[type="submit"], .search-bar i{
+  background-color: var(--color-primary1);
+  color:#fff;
+}
+.search-bar i{
+  border-radius: 5px;
+}
+#footer li a:hover{
+  color: var(--color-primary1);
+}
+.wc-block-cart__submit-container a,.search-box i,.call i, .email i,p.infotext,.logo a,.page-numbers,#theme-sidebar button[type="submit"], #footer button[type="submit"],span.meta-nav,.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,#comments input[type="submit"],button[type="submit"],.more-btn a,.blog-info,.site-info p,#footer li,#footer li a,#footer .tagcloud a,#footer .textwidget,#footer th, #footer td,caption{
+  color: #fff;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce span.onsale,.offer-box i.fas.fa-play:hover{
+  background: #122947;
+}
+body,.page-box p,#theme-sidebar a,.box-info span,#theme-sidebar li,h2.woocommerce-loop-product__title, .woocommerce div.product .product_title{
+  color: #40526a;
+}
+#theme-sidebar .tagcloud a, #sidebar p.wp-block-tag-cloud a, #theme-sidebar .widget_tag_cloud a{
+  border-color: #40526a;
+  color: #40526a;
+}
+#footer .tagcloud a,#footer th, #footer td,#footer tr,#footer table#wp-calendar{
+  border-color: #fff;
+}
+#theme-sidebar .wp-block-search .wp-block-search__label {
+    color: var(--color-primary1);
+}
+a.page-numbers{
+    color: white !important;
+ }
+
+#theme-sidebar .tagcloud a:hover, p.wp-block-tag-cloud a:hover, .post_tag a:hover{
+  border-color:var(--color-primary1) ;
+  color: var(--color-primary1);
+}
+#footer a:hover{
+  color: var(--color-primary1);
+}
+#footer .tagcloud a:hover, #footer p.wp-block-tag-cloud a:hover{
+  border-color:var(--color-primary1);
+  color: var(--color-primary1);
+}
+.error-404 [type="submit"] {
+  padding: 10px;
+  background: var(--color-primary1);
+  border: solid 1px var(--color-primary1);
+  cursor: pointer;
+  font-weight: 500;
+}
+.readmore-btn a:hover{
+  border-color: #122947;
+}
+.readmore-btn a:hover,a:hover,.carousel-control-prev-icon:hover,.carousel-control-next-icon:hover{
+  color: #122947;
+}
+.more-btn a:hover,.wc-block-cart__submit-container a:hover,#theme-sidebar button[type="submit"]:hover,#footer button[type="submit"]:hover, #comments input[type="submit"]:hover,.next.page-numbers:hover{
+  background: #122947;
+}
+.wp-block-button .wp-block-button__link:hover{
+  background: #122947 !important;
+}
+/* MENUS */
+
+.menubar{
+  padding: 15px 0;
+}
+.menubar{
+  background: #fff;
+}
+.main-navigation li.page_item_has_children:after, .main-navigation li.menu-item-has-children:after {
+  top: 15px;
+  right: -2px;
+  color: #222222;
+}
+.main-navigation a {
+  letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+.main-navigation li {
+  padding: 15px 8px;
+}
+.sf-arrows .sf-with-ul{
+  padding: 0;
+}
+.logo, .logo h1 a{
+  text-align: left;
+  color: #000;
+}
+.logo h1,.logo p.site-title {
+  font-size: 25px;
+}
+.social-media i,.search-box i{
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  width: 47px;
+  height: 47px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 5px;
+  background: var(--color-primary1);
+}
+.search-box i:hover{
+  background: #fff;
+  color: #122947;
+}
+.social-media a i {
+    font-size: 18px;
+}
+.social-media i.fab.fa-facebook-f{
+  background: #3b5998;
+}
+.social-media i.fab.fa-facebook-f:hover{
+  color: #3b5998;
+  background: var(--color-primary1);
+}
+.social-media i.fab.fa-twitter{
+  background: #1da1f2;
+}
+.social-media i.fab.fa-twitter:hover{
+  color: #1da1f2;
+  background: var(--color-primary1);
+}
+.social-media i.fab.fa-instagram{
+  background: #c13584;
+}
+.social-media i.fab.fa-instagram:hover{
+  color: #c13584;
+  background: var(--color-primary1);
+}
+.social-media i.fab.fa-youtube{
+  background: #ff0000;
+}
+.social-media i.fab.fa-youtube:hover{
+  color: #ff0000;
+  background: var(--color-primary1);
+}
+.social-media i.fab.fa-pinterest{
+  background: #e60023;
+}
+.social-media i.fab.fa-pinterest:hover{
+  color: #e60023;
+  background: var(--color-primary1);
+}
+#footer {
+  background: #33302d;
+}
+.site-info a {
+    color: #fff;
+}
+.logo h1 a, .logo p a{
+  color: #000;
+}
+/* SLIDER CSS */
+
+#slider .inner_carousel h1 a{
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  padding-left: 15px;
+  padding-bottom: 0;
+}
+#slider .carousel-control-prev-icon:hover, #slider .carousel-control-next-icon:hover{
+  background: var(--color-primary1);
+}
+#slider .inner_carousel {
+  height: 50px;
+  border-left: transparent;
+}
+.more-btn a{
+  font-size: 14px;
+  font-weight: bold;
+}
+/* block gallery */
+
+figure.wp-block-gallery.columns-3 {
+    padding-right: 7%;
+}
+
+figure.wp-block-gallery.columns-2 {
+    padding-right: 1%;
+}
+
+/* block button */
+
+.wp-block-button a.wp-block-button__link {
+    border-radius: 30px;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover{
+    border-color:  #122947;
+    border-width: 4px;
+    color:  #122947 !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link{
+    border-color: var(--color-primary1);
+    color: var(--color-primary1) !important;
+}
+
+.wp-block-button.is-style-squared .wp-block-button__link {
+    border-radius: 0;
+}
+
+
+/* EXPLORE PLACES CSS */
+
+#travel-offer .cat-box {
+  background: white;
+  padding: 50px 25px;
+}
+#travel-offer {
+    position: relative;
+    margin-top: -6%;
+    z-index: 99;
+}
+#travel-offer img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+.cat-inner-box {
+  box-shadow: 0 5px 10px 2px #bbb;
+}
+.offer-box h2 a {
+  font-size: 20px;
+  color: #122947;
+}
+
+nav.woocommerce-MyAccount-navigation ul li a,.offer-box span.entry-date,span.entry-veiw{
+  color: #122947;
+}
+nav.woocommerce-MyAccount-navigation ul li {
+  border-color: #122947;
+  box-shadow: 2px 2px 0 0 #122947;
+}
+
+.box-info span,#theme-sidebar a {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/*preloader */
+
+.center1 {
+    border-left-color: var(--color-primary1);
+    border-top-color: var(--color-primary1);
+}
+.center1 .ring::before{
+    background: var(--color-primary1);
+}
+
+/* OTHER CSS */
+
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 1px solid #333;
+  padding: 2px;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+ul.sub-menu ul.sub-menu {
+    left: 202px !important;
+}
+@media screen and (max-width: 560px){
+  #slider .inner_carousel {
+    border-left: transparent!important;
+  }
+  #slider .inner_carousel h1 a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px){
+  .logo{
+    text-align: center;
+  }
+  .nav ul li a:hover,.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a {
+    color: #fff;
+  }
+  .social-media i, .search-box i{
+    width: 38px;
+    height: 38px;
+    padding: 11px 0;
+  }
+  .main-navigation ul ul{
+    background: transparent;
+  }
+  .toggle-nav i {
+    background: var(--color-primary1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #slider .more-btn a {
+    padding: 6px 8px;
+
+  }
+  .social-media{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  
+  .social-media{
+    text-align: center;
+  }
+  .menubox{
+    text-align: center;
+  }
+  .innermenubox {
+    padding: 0;
+  }
+  .toggle-nav i {
+    background: var(--color-primary1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .main-navigation ul ul{
+    background: none;
+  }
+  #slider .inner_carousel {
+   height: 50px;
+   border-left:transparent;
+  }  
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1199px){
+  .social-media i, .search-box i{
+    width: 38px;
+    height: 38px;
+    padding: 11px 0;
+  }
+}
